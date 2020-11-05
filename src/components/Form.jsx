@@ -18,7 +18,6 @@ const Form = ({ inputText, setInputText, todos, setTodos }) => {
         ]
     );
     setInputText(""); // Reset the submit field to a empty string
-    console.log("resetado");
 
   };
 
