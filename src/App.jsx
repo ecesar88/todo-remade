@@ -7,6 +7,7 @@ function App() {
   // Declaring the states
   const [inputText, setInputText] = useState("");
   const [todos, setTodos] = useState([]);
+  const [status, setStatus] = useState('all');
 
   // Render stuff
   return (
@@ -18,6 +19,8 @@ function App() {
         setInputText={setInputText}
         todos={todos}
         setTodos={setTodos}
+        status={status}
+        setStatus={setStatus}
       />
       {/* Render todoList */}
       <TodoList todos={todos} setTodos={setTodos} />
